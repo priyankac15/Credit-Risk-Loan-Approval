@@ -40,3 +40,35 @@ The business meaning of each column in the data is as below:
 - liable: Number of people being liable to provide maintenance for
 - tele: Is the Telephone registered or not
 - foreign: Is the applicant a foreign worker
+
+LOGISTIC REGRESSION OUTPUT:
+
+![image](https://user-images.githubusercontent.com/117341679/221497087-d47f92ae-24f8-48e7-9605-f204ca35c8d5.png)
+
+DECISION TREES OUTPUT:
+
+![image](https://user-images.githubusercontent.com/117341679/221497186-bb31b7a1-f069-4e5f-9c5f-8dd96902f12b.png)
+
+![image](https://user-images.githubusercontent.com/117341679/221497246-23c85685-4d6b-4ab2-9f41-572b58d6f30c.png)
+
+RANDOM FOREST OUTPUT:
+
+![image](https://user-images.githubusercontent.com/117341679/221497373-751fe690-06d3-4549-a1d7-aa5dc8c94d5c.png)
+
+SUPPORT VECTOR MACHINE(SVM):
+
+![image](https://user-images.githubusercontent.com/117341679/221497451-d6c816ee-ed73-443c-87f3-0d976d56a533.png)
+
+MODEL DEPLOYMENT:
+
+Based on the above trials you select that algorithm which produces the best average accuracy. In this case, multiple algorithms have produced similar kind of average accuracy. Hence, we can choose any one of them.I am choosing SVM as the final model since it is very fast on this high dimensional data.
+
+Flask is a lightweight web framework for Python that can be used to build and deploy web applications, including machine learning models. Here are the general steps to deploy a loan prediction model using Flask:
+
+- Train and save the model: You first need to train a machine learning model on a loan prediction dataset and save the model to a file using a serialization library like pickle or joblib.
+
+- Create a Flask app: You can create a Flask app that defines a route to handle loan prediction requests. The app should load the trained model from the saved file and use it to make predictions on new loan applications.
+
+- Deploy the Flask app: You can deploy the Flask app to a server or cloud platform that supports Python web applications. There are many options for deployment, including Heroku, AWS Elastic Beanstalk, and Google Cloud App Engine.
+
+
